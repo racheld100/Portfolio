@@ -22,6 +22,12 @@ img {
 
 .work-grid {
     display: grid;
-    grid-template-columns: 100px 100px;
+    grid-template-columns: 200px 200px;
     grid-template-rows: 100px 100px 100px;
+    justify-content: center;
+    background-color: gray;
+}
+
+.grid-item-1 {
+    grid-column: span 2;
 }
