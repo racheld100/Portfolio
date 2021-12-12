@@ -1,0 +1,27 @@
+header {
+    background-color: gray;
+}
+
+nav {
+    display: inline;
+}
+
+#background-image {
+    width: 100%;
+    height: 100px;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+}
