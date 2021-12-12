@@ -1,17 +1,17 @@
 * {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #8F8073;
+    margin: 0px;
 }
 
 header {
-    background-color: #12130F;
+    background-color: #6385BB;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 h1 {
-    background-color: #5B9279;
+    background-color: #31393C;
     color: white;
     margin: 20px;
     margin-left: 0px;
@@ -20,11 +20,11 @@ h1 {
 }
 
 .nav {
-    background-color: #12130F;
+    background-color: #6385BB;
     display: inline;
     padding: 20px;
     font-weight: bold;
-    color: #8FCB9B;
+    color: black;
     font-size: 20px;
 }
 
@@ -63,9 +63,10 @@ h2 {
 }
 
 .grid-item p {
-    background-color: blue;
+    background-color: #FB9A4B;
     position: absolute;
-    font-size: 30px;
+    font-size: 20px;
+    padding: 5px;
 }
 
 #grid-item-1 {
