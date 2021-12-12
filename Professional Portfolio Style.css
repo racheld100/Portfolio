@@ -1,33 +1,40 @@
 * {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #8F8073;
 }
 
 header {
-    background-color: gray;
+    background-color: #12130F;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 h1 {
-    background-color: purple;
-    border-style: solid;
-    border-width: 5px;
-    border-color: black;
+    background-color: #5B9279;
+    color: white;
     margin: 20px;
+    margin-left: 0px;
     padding: 10px;
+    padding-left: 40px;
 }
 
 .nav {
+    background-color: #12130F;
     display: inline;
     padding: 20px;
     font-weight: bold;
-    color: chartreuse;
+    color: #8FCB9B;
+    font-size: 20px;
 }
 
 #background-image {
     width: 100%;
     height: 100px;
+}
+
+h2 {
+    font-size: 30px;
 }
 
 .main-grid {
@@ -51,9 +58,14 @@ h1 {
 }
 
 .grid-item {
-    background-color: purple;
     height: 200px;
-    background: url('240_F_443373100_2wIWcAiQeTxU39btoA7q15RDiMbGykHP.jpg');
+    background: url('640x360.png');
+}
+
+.grid-item p {
+    background-color: blue;
+    position: absolute;
+    font-size: 30px;
 }
 
 #grid-item-1 {
