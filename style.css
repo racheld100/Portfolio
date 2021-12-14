@@ -1,52 +1,60 @@
 * {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0px;
+    --gray: #3D3E3D;
+    --very-light-yellow: #F4E2B8;
+    --light-yellow: #E9C572;
+    --yellow: #D5A021;
+    --green: #87D8AD;
+    --mint: #CDEDD5;
+    --white: rgb(225, 225, 225);
 }
 
 header {
-    background-color: #DAE2F4;
+    background-color: var(--mint);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 h1 {
-    background-color: black;
-    color: white;
+    background-color: var(--yellow);
+    color: var(--white);
+    text-emphasis: bold;
     margin: 20px;
     margin-left: -20px;
-    padding: 10px;
-    padding-left: 60px;
+    padding: 20px;
+    padding-left: 100px;
+    padding-right: 40px;
     border-radius: 20px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: var(--light-yellow);
 }
 
 .nav {
-    background-color: white;
+    background-color: var(--white);
     display: inline;
     padding: 10px;
     margin: 10px;
     font-weight: bold;
-    color: black;
+    color: var(--black);
     font-size: 20px;
     border-radius: 20px;
     border-style: solid;
-    border-color: black;
     text-decoration: none;
 }
 
+#very-light-yellow:hover {
+    background-color: var(--very-light-yellow);
+}
+
+#light-yellow:hover {
+    background-color: var(--light-yellow);
+}
+
 #yellow:hover {
-    background-color: #FAAC43;
-    color: white;
-}
-
-#pink:hover {
-    background-color: #EA3B6B;
-    color: white;
-}
-
-#blue:hover {
-    background-color: #056CAF;
-    color: white;
+    background-color: var(--yellow);
 }
 
 #background-image {
@@ -61,7 +69,7 @@ h2 {
 .main-grid {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     justify-content: center;
     text-align: center;
     grid-gap: 10px;
@@ -85,12 +93,12 @@ h2 {
 }
 
 .grid-item:hover {
-    box-shadow: 10px 10px 100px #7C357F;
-}
+    box-shadow: 10px 10px 100px var(--yellow);
+} 
 
 .grid-item p {
-    background-color: #FAAC43;
-    color: white;
+    background-color: var(--yellow);
+    color: var(--white);
     border-radius: 10px;
     position: absolute;
     font-size: 20px;
@@ -99,14 +107,14 @@ h2 {
 
 #grid-item-1 {
     grid-area: header;
-    background: url(Capture.PNG);
+    background: url(Capture.PNG)
 }
 
-
 footer {
-    background-color: #FAAC43;
+    background-color: var(--green);
     align-items: center;
     height: 90px;
+    position: relative;
 }
 
 li {
@@ -114,8 +122,31 @@ li {
     display: inline-block;
     padding: 20px;
     font-weight: bold;
-    border-color: black;
+    border-color: var(--black);
     border-style: solid;
     border-radius: 20px;
-    background-color: white;
+    background-color: var(--white);
 }
+
+.links {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1050px) {
+    header {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        height: 150px;
+    }
+    
+    h1 {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding: 10px;
+    }
+
+    footer {    
+        height: 250px;
+    }
+  }
