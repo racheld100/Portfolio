@@ -105,6 +105,15 @@ h2 {
     padding: 5px;
 }
 
+section a {
+    float: right;
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--gray); 
+}
+
 #grid-item-1 {
     grid-area: header;
     background: url(Capture.PNG)
